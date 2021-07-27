@@ -147,7 +147,7 @@
                     eventLimit: true,
                     eventColor: '#378006',
                     events: events,
-                    eventClick: function (calEvent) {
+                    eventClick: function (calEvent , jsEvent, view) {
                         selectedEvent = calEvent;
                         $('#myModal #eventTitle').text(calEvent.title);
                         var $description = $('<div/>');
